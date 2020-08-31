@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US" prefix="og: http://ogp.me/ns#">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+<title>오 마이 브랜드</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">    
+<meta name="generator" content="NXM" />
+<!--[if lt IE 9]>
+
+<![endif]-->
+
+<link rel="stylesheet" href="assets/css/common.css?ver=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.css">
+<link rel="stylesheet" href="assets/css/main.css?ver=1">
+
+</head>
+<body class="bg_color1">
+	<div id="registraion" class="nxm_artist_registration_contents">
+		<div class="artist_registration_header">
+			<div>작가등록</div>
+			<div class="steps-bar">
+				<ul class="steps-indicator">
+					<li class="default">
+						<div>
+							<a href="">회원가입/로그인</a>
+						</div>
+					</li>
+
+					<li class="current">
+						<div>
+							<a href="">포트폴리오 확인</a>
+						</div>
+					</li>
+
+					<li class="default">
+						<div>
+							<a href="">작가정보 및 계약 작성</a>
+						</div>
+					</li>
+					<li class="default">
+						<div>
+							<a href="">등록 완료</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="artist_registration_portfolio">
+			<div class="r_basic r_portfolio_text">
+				포트폴리오 업로드
+				<span>작가님께서 작업하신 작품들을 업로드 해주세요</span>
+			</div>
+<!-- 			<div class="r_portfolio_filelist">
+				<div>0/10MB</div>
+			</div> -->
+
+<form action="/file-upload" class="dropzone">
+	<div class="dz-message" data-dz-message><span>이곳에 끌어다 놓거나 클릭하여 파일을 선택하세요.</span></div>
+  <div class="fallback">
+    <input name="file" type="file" multiple accept="image/*,video/*" />
+  </div>
+</form>
+<!-- 파일 선택 -->
+
+			<form>
+
+
+
+
+<!-- 				<input type="file" id="select_portfolio" name="" style="display: none;">
+				<span class="comm_btn">
+					<label class="contents_btn_color" for="select_portfolio" class=""></label>
+				</span> -->
+			</form>
+		</div>
+		<div class="artist_registration_select_price">
+			<div class="r_basic">
+				희망 가격대 선택(1개 선택 가능)
+				<span>담당 MD와 심사후 결정되어지며, 최적의 가격대로 배치되어집니다.</span>
+			</div>
+			<form>
+				<div class="r_select_price_chk">
+					<input type="radio" checked="checked" id="low_price" name="choice_one" >
+					<label for="low_price" class="margin_r5">
+						<div>
+							<div class="image_sample"><img src="assets/img/select_price_image01.jpg"></div>
+						</div>
+						<div class="sp_box">
+							<div class="sp_title">저가형</div>
+							<div class="sp_style">단순한 스타일</div>
+							<div class="sp_price">
+								<span>가격</span>
+								0원~9,900원
+							</div>
+							<div class="sp_text">
+								<ul>
+									<li>컬러링 X, 선으로만 표현<br>(단, 포인트 컬러까지는 허용)</li>
+									<li>많은 판매량</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+					<input type="radio" id="normal_price" name="choice_one">
+					<label for="normal_price">
+						<div>
+							<div class="image_sample"><img src="assets/img/select_price_image02.jpg"></div>
+						</div>
+						<div class="sp_box">
+							<div class="sp_title">일반형</div>
+							<div class="sp_style">대중적인 스타일</div>
+							<div class="sp_price">
+								<span>가격</span>
+								10,000원~29,900원
+							</div>
+							<div class="sp_text">
+								<ul>
+									<li>표현제한 없음</li>
+									<li>평균적인 판매량</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+				</div>
+				<div class="r_select_price_chk">
+					<input type="radio" id="high_price" name="choice_one">
+					<label for="high_price" class="margin_tr5">
+						<div>
+							<div class="image_sample"><img src="assets/img/select_price_image03.jpg"></div>
+						</div>
+						<div class="sp_box">
+							<div class="sp_title">고가형</div>
+							<div class="sp_style">고밀도, 대중적인 스타일</div>
+							<div class="sp_price">
+								<span>가격</span>
+								30,000원~49,900원
+							</div>
+							<div class="sp_text">
+								<ul>
+									<li>표현제한 없음</li>
+									<li>평균적인 판매량</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+					<input type="radio" id="premium_price" name="choice_one">
+					<label for="premium_price" class="margin_t5">
+						<div>
+							<div class="image_sample"><img src="assets/img/select_price_image04.jpg"></div>
+						</div>
+						<div class="sp_box">
+							<div class="sp_title">프리미엄형</div>
+							<div class="sp_style">고밀도, 고퀄리티 스타일</div>
+							<div class="sp_price">
+								<span>가격</span>
+								50,000원~
+							</div>
+							<div class="sp_text">
+								<ul>
+									<li>작가의 예술적인 감각이 가미된<br>스타일(표현제한 없음)</li>
+									<li>고객의 만족도가 낮을경우 강등(3회 이상)</li>
+								</ul>
+							</div>
+						</div>
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="artist_registration_info">
+			<div class="r_info_title r_basic">
+				작가약력 입력
+				<span>작성예시)[2009~2014]롯데월드 내 캐리커쳐 작가활동</span>
+			</div>
+			<form>
+				<div class="r_history">
+					<textarea></textarea>
+				</div>
+				<div class="r_homepage">
+					<div class="r_homepage_title r_basic">
+						개인 홈페이지
+						<span>SNS or blog</span>
+					</div>
+
+					<fieldset class="common_form">						
+						<div class="row_group">
+							
+							<div id="" class="common_row">
+								<span class="ps_box">
+									<input type="text" id="" name="" value="" placeholder="Instagram, Facebook 등" class="int"> 
+								</span>
+							</div>		
+
+						</div>
+					</fieldset>
+
+				</div>
+				<div class="r_choice_area">
+					<div class="r_basic r_area_title r_basic">
+						행사가능 지역 선택(다중선택 가능)
+						<span>오프라인 캐리커쳐 행사가 진행될 시 참설할 수 이쓴 지역을 선택해주세요.</span>
+					</div>
+					<div class="r_area_list">
+						<div class="r_area_list_container">
+							<div class="r_choice_box">
+								<input type="checkbox" id="c1" name="choice_area">
+								<label for="c1"><span></span>서울</label>
+								<input type="checkbox" id="c2" name="choice_area">
+								<label for="c2"><span></span>강원</label>
+								<input type="checkbox" id="c3" name="choice_area">
+								<label for="c3"><span></span>충남</label>
+								<input type="checkbox" id="c4" name="choice_area">
+								<label for="c4"><span></span>전북</label>
+								<input type="checkbox" id="c5" name="choice_area">
+								<label for="c5"><span></span>경북</label>
+								<input type="checkbox" id="c6" name="choice_area">
+								<label for="c6"><span></span>제주도</label>
+								<input type="checkbox" id="c7" name="choice_area">
+								<label for="c7"><span></span>경기</label>
+								<input type="checkbox" id="c8" name="choice_area">
+								<label for="c8"><span></span>대전</label>
+								<input type="checkbox" id="c9" name="choice_area">
+								<label for="c9"><span></span>대구</label>
+								<input type="checkbox" id="c10" name="choice_area">
+								<label for="c10"><span></span>전남</label>
+								<input type="checkbox" id="c11" name="choice_area">
+								<label for="c11"><span></span>경남</label>
+								<input type="checkbox" id="c12" name="choice_area">
+								<label for="c12"><span></span>울릉도</label>
+								<input type="checkbox" id="c13" name="choice_area">
+								<label for="c13"><span></span>인천</label>
+								<input type="checkbox" id="c14" name="choice_area">
+								<label for="c14"><span></span>충북</label>
+								<input type="checkbox" id="c15" name="choice_area">
+								<label for="c15"><span></span>부산</label>
+								<input type="checkbox" id="c16" name="choice_area">
+								<label for="c16"><span></span>광주</label>
+								<input type="checkbox" id="c17" name="choice_area">
+								<label for="c17"><span></span>울산</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+			<a class="comm_btn custom_btn" href="artist_registration2.php">
+				<input type="submit" title="작가 지원하기" alt="작가 지원하기" value="작가 지원하기" class="">
+			</a>
+			<div class="artist_registration_submit">
+				<span>1단계 포트폴리오 심사 후<br>내부 회의를 거쳐 결과를 알려드립니다.</span>
+			</div>
+		</div>
+	</div>
+
+
+	<%- include footer.ejs %> 
+
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.js"></script>
+
+</body>
+</html>

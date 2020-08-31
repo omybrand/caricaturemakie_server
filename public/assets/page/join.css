@@ -1,0 +1,901 @@
+label{
+  cursor: pointer;
+}
+/* FORGET */
+.forget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget a {
+  color: #57d5c0;
+}
+
+/******************** login contents ********************/
+
+
+
+#nxmHeader .login_header_custon {
+  max-width: 400px;
+}
+
+#nxmHeader .login_header_custon select {
+  border: 0;
+  border-radius: 0;
+  background: 0 0;
+  -webkit-appearance: none;
+}
+
+#nxmHeader .login_header_custon .select_language {
+  margin-top: 16px;
+  margin-right: 2px;
+  font-size: 12px;
+  font-weight: 400;
+  min-width: 85px;
+  height: 24px;
+  padding: 3px 10px 3px 6px;
+  color: #333;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  background: #fff url(/assets/img/down_arrow.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 15px;
+  background-size: 15px;
+  background-position: 63px;
+}
+
+.nxm_login_contents {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nxm_login_contents .nxm_login_container {
+  padding: 0 30px 150px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.nxm_login_contents .nxm_login_container > div,
+.nxm_login_contents .nxm_login_container > form {
+  margin: 0 auto;
+}
+
+.nxm_login_contents .nxm_login_container input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  outline-color: #fa8a84;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+
+.nxm_login_contents .nxm_login_container .login_id {
+  margin-bottom: -1px;
+}
+
+.nxm_login_contents .nxm_login_container .id_remember {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.nxm_login_contents .nxm_login_container .id_remember input {
+  display: none;
+}
+
+
+
+.nxm_login_contents .nxm_login_container h2 {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.nxm_login_contents .nxm_login_container .id_remember label {
+  padding-left: 20px;
+  position: relative;
+  background-image: url(/assets/img/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 18px;
+}
+
+.nxm_login_contents .nxm_login_container .id_remember input:checked+label {
+  background-image: url(/assets/img/checkbox_.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 18px;
+  border-color: #ff8886;
+}
+
+.nxm_login_contents .nxm_login_container .other_login {
+  width: 100%; 
+  height: 60px; 
+  margin-top: 40px;
+}
+
+.nxm_login_contents .nxm_login_container .other_login .link_kakao,
+.nxm_login_contents .nxm_login_container .other_login .link_naver {
+  display: inline-block;
+  overflow: hidden;
+  height: 40px;
+  padding: 0 55px 0;
+  border-radius: 40px;
+  line-height: 41px;
+  color: #1e1e1e;
+  background-color: #ffdc00;
+}
+
+.nxm_login_contents .nxm_login_container .other_login .link_kakao span,
+.nxm_login_contents .nxm_login_container .other_login .link_naver span {
+  font-size: 12px;
+}
+
+.nxm_login_contents .nxm_login_container .other_login .link_naver {
+  color: #fff;
+  background-color: #0bc83a;
+}
+
+.nxm_login_contents .nxm_login_container .copyright {
+  display: flex;
+  margin: 80px 0 0;
+  justify-content: center;
+}
+
+.nxm_login_contents .nxm_login_container .copyright p,
+.nxm_login_contents .nxm_login_container .copyright a {
+  color: #555;
+  font-size: 12px;
+}
+
+.nxm_login_contents .nxm_login_container .copyright a {
+  text-decoration: none;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #555;
+}
+
+.nxm_login_contents form .comm_btn input {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+/******************** find password contents ********************/
+
+.nxm_password_contents {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.nxm_password_contents .nxm_password_container {
+  padding: 0 30px 150px;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.nxm_password_contents .nxm_password_container form {
+  display: flex;
+}
+
+.nxm_password_contents .nxm_password_container input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  outline-color: #fa8a84;
+  padding: 5px 10px;
+  box-shadow: none;
+}
+
+
+.nxm_password_contents .nxm_password_container .login_id {
+  margin-bottom: -1px;
+}
+
+.nxm_password_contents .nxm_password_container .id_remember {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.nxm_password_contents .nxm_password_container .id_remember input {
+  display: none;
+}
+
+
+
+.nxm_password_contents .nxm_password_container h2 {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px 0;
+}
+
+.nxm_password_contents .nxm_password_container .id_remember label {
+  padding-left: 20px;
+  position: relative;
+  background-image: url(/assets/img/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 18px;
+}
+
+.nxm_password_contents .nxm_password_container .id_remember input:checked+label {
+  background-image: url(/assets/img/checkbox_.svg);
+  background-repeat: no-repeat;
+  background-position: 0 -2px;
+  background-size: 18px;
+  border-color: #ff8886;
+}
+
+.nxm_password_contents form input, 
+.nxm_password_contents form input::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+
+/******************** mympage contents ********************/
+
+.nxm_mypage_contents {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.nxm_mypage_contents .nxm_mypage_contents_container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto 100px;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #dadada;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list a {
+  width: 50%;
+  background-color: #fff;
+}
+
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list a h3 {
+  font-size: 22px;
+  color: #000;
+  padding-top: 20px;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list a h4 {
+  font-size: 12px;
+  padding-top: 20px;
+  color: #999;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_buy,
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_wishlist,
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_mileage,
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_coupon {
+  min-height: 146px;
+  margin-top: -1px;
+  margin-left: -1px;
+  padding: 30px;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_buy {
+  border-right: 1px solid #dadada;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_mileage,
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_coupon {
+  border-top: 1px solid #dadada;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div.nxm_quick_coupon {
+  border-left: 1px solid #dadada;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div div {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.nxm_mypage_contents .nxm_quick_icon .nxm_quick_icon_list div img {
+  max-width: 60px;
+  width: 100%;
+}
+
+.nxm_mypage_contents .nxm_quick_menu {
+  margin-top: 30px;
+}
+
+.nxm_mypage_contents .nxm_quick_menu a > div {
+  margin-bottom: -1px;
+  padding: 5px;
+}
+
+
+.nxm_mypage_contents .nxm_quick_menu a > div div {
+  width: 100%;
+  text-align: left;
+}
+
+.nxm_mypage_contents .nxm_quick_menu a > div div span {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  color: #000;
+  background-image: url('/assets/img/right_arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 30px;
+}
+
+
+
+
+/******************** join contents ********************/
+
+
+.nxm_join_contents {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.nxm_join_contents .nxm_join_container {
+  padding: 0 30px 150px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #666;
+}
+
+.nxm_join_contents .nxm_join_container > div {
+  text-align: left;
+  font-size: 20px;
+}
+
+
+.nxm_join_terms_of_use {
+  background-color: #fff;
+  font-size: 12px;
+  text-align: left;
+  border: 1px solid #dadada;
+}
+
+
+#termsMsg {
+  margin: 10px 10px 15px;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_terms_of_use .nxm_terms_of_use_header,
+.artist_registration_agree .r_conteinar .nxm_join_terms_of_use .nxm_terms_of_use_header {
+  width: 100%;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_terms_of_use .nxm_terms_of_use_header > div,
+.artist_registration_agree .r_conteinar .nxm_join_terms_of_use .nxm_terms_of_use_header > div {
+  position: relative;
+  padding: 10px;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_terms_of_use .nxm_terms_of_use_header > div > div,
+.artist_registration_agree .r_conteinar .nxm_join_terms_of_use .nxm_terms_of_use_header > div > div {
+  justify-content: none;
+  align-items: center;
+  overflow-y: auto;
+  height: 80px;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_terms_of_use a,
+.artist_registration_agree .r_conteinar .nxm_join_terms_of_use a {
+  max-width: 50px;
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #ddd;
+  color: #aaa;
+  font-size: 12px;
+}
+
+.nxm_join_contents .nxm_join_container .join_button {
+  margin-top: 30px;
+  display: flex;
+}
+
+.nxm_join_contents .nxm_join_container .join_button a {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 17px 0;
+  font-size: 12px;
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+.nxm_join_contents .nxm_join_container .join_button a:last-child {
+  margin-right: 0;
+}
+
+.nxm_join_contents .nxm_join_container .join_button .join_agree {
+  width: 100%;
+  margin: 0 0 19px;
+  border: 0;
+}
+
+.nxm_join_contents .nxm_join_container .forget {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nxm_join_contents .nxm_join_container .forget a {
+  color: #57d5c0;
+}
+
+.input_chk {
+  position: relative;
+  display: block;
+  height: 30px
+}
+.input_chk input {
+  position: absolute;
+  z-index: 9;
+  top: 5%;
+  right: 12px;
+  width: 23px;
+  height: 23px;
+  margin-top: -11px;
+  opacity: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  margin: 0;
+  display: none;
+}
+
+.input_chk label {
+  font-size: 14px;
+  position: absolute;
+  line-height: 24px;
+  top: 0;
+  left: 0;
+  height: 24px;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: #333;
+  background: url(/assets/img/checkbox_login.svg) 100% 50% no-repeat;
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px
+}
+
+.input_chk input:checked+label {
+  background: url(/assets/img/checkbox_.svg) 100% 50% no-repeat;
+  -webkit-background-size: 30px 30px;
+  background-size: 30px 30px
+}
+
+.input_chk label .terms_no {
+  color: #8e8e8e  
+}
+
+.input_chk label .terms_tit_link {
+  color: #333;
+  text-decoration: underline
+}
+
+.terms_chk_all {
+  display: block;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.terms_chk_all .input_chk {
+  height: 58px
+}
+
+.terms_chk_all .input_chk label {
+  line-height: 20px;
+  top: -1px;
+  display: table;
+  height: 58px
+}
+
+.terms_chk_all .input_chk label div {
+  max-width: 200px;
+  width: 100%;
+}
+
+.terms_chk_all .input_chk label span {
+  display: table-cell;
+  vertical-align: middle
+}
+
+.jender {
+    position: relative;
+    z-index: 10;
+    display: block;
+    float: left;
+    width: 49.7%;
+    height: 31px;
+    border-right: solid 1px #dcdcdc
+}
+.jender+.jender {
+    border: none
+}
+.jender input {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px
+}
+.jender label {
+  font-size: 14px;
+    line-height: 32px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 31px;
+    cursor: pointer;
+    text-align: center;
+    color: #8e8e8e;
+    background: #fff
+}
+.jender input:checked+label {
+    z-index: 100;
+    margin: -1px;
+    color: #fb8a84;
+    border: solid 1px #fb8a84;
+}
+.jender label.on {
+    z-index: 100;
+    margin: -1px;
+    color: #fb8a84;
+    border: solid 1px #fb8a84;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_submit {
+  margin-top: 30px;
+  max-width: 530px;
+  width: 100%;
+  background-color: #fb8a84;
+  border: 0;
+  height: 80px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_info .nxm_join_info_box {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.nxm_join_contents .nxm_join_container .nxm_join_info .nxm_join_info_box input {
+  border: 0;
+}
+
+.article, .clause__title {
+  margin-top: 10px;
+}
+
+.article:first-child {
+  margin-top: 0;
+}
+
+.article .article__title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.sections__section {
+  font-size: 11px;
+}
+
+.clause .clause__title {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.join_row {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 11px 11px 11px 13px;
+  background: #fff;
+}
+
+
+.join_row+.join_row {
+  border-top: solid 1px #f0f0f0;
+}
+
+.join_row:first-child {
+  border-top: none;
+}
+
+
+.blind {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+}
+
+.ipin_box, .row_group {
+  zoom: 1;
+  margin-bottom: 10px;
+  border: solid 1px #dadada;
+  background: #fff;
+}
+
+.join_row .int {
+  font-size: 15px;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  padding: 6px 6px 6px 0;
+  border: none;
+  background: #fff;
+  apperance: none;
+  -webkit-apperance: none;
+}
+
+.join_from .lbl {
+  font-size: 15px;
+  line-height: 18px;
+  position: absolute;
+  z-index: 9;
+  top: 5px;
+  left: 0;
+  display: block;
+  color: #8e8e8e;
+}
+
+.wrg {
+  position: absolute;
+  z-index: 1000;
+  top: 5px;
+  right: 5px;
+  display: none;
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  text-indent: -999px;
+  border: 0;
+  background: url(https://static.nid.naver.com/images/join/pc/sp_join.png) no-repeat 0 0;
+  background-color: transparent;
+  -webkit-background-size: 19px 19px;
+  background-size: 19px 19px;
+}
+
+.wrg {
+  display: none;
+}
+
+.error {
+  font-size: 12px;
+  display: block;
+  margin: 5px 0 3px 0;
+  color: red;
+}
+
+.join_sex {
+  overflow: hidden;
+  padding: 8px 18px 8px 15px;
+}
+
+.row_title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 33px;
+  display: inline-block;
+  height: 33px;
+  margin-left: 2px;
+  color: #8e8e8e;
+}
+
+.sex {
+  display: block;
+  height: 31px;
+  margin-right: -3px;
+  border: solid 1px #dcdcdc;
+}
+
+.jender {
+  position: relative;
+  z-index: 10;
+  display: block;
+  float: left;
+  width: 49.7%;
+  height: 31px;
+  border-right: solid 1px #dcdcdc;
+}
+
+.jender label {
+  line-height: 32px;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 31px;
+  cursor: pointer;
+  text-align: center;
+  color: #8e8e8e;
+  background: #fff;
+}
+
+.jender+.jender {
+  border: none;
+}
+
+.join_from .cell {
+  display: table-cell;
+  width: 5px;
+  padding-right: 10px;
+  text-indent: -999em;
+  background: url(https://static.nid.naver.com/images/join/pc/ico_join3_2x_20170202.png) -94px -575px no-repeat;
+  -webkit-background-size: 97px 900px;
+  background-size: 97px 900px;
+}
+
+.join_birth .cell,
+.join_tel .cell {
+  width: 1px;
+  padding: 0;
+  background-position: -96px -566px!important;
+}
+
+
+.ps_box {
+  display: flex;
+  position: relative;
+  height: 27px;
+}
+
+.ps_box .email_double_check {
+  line-height: 23px;
+  display: block;
+  width: 100px;
+  height: 27px;
+  cursor: pointer;
+  text-align: center;
+  color: #8e8e8e;
+  background: #fff;
+}
+
+.join_birthday {
+  padding: 0;
+}
+
+.join_tel_num {
+  padding: 0;
+}
+
+.join_birth,
+.join_tel {
+  display: table;
+  padding-right: 15px;
+}
+
+.bir_title,
+.tel_title {
+  min-width: 19px;
+  font-size: 13px;
+  display: table-cell;
+  width: 65px;
+  padding: 3px 8px 0 10px;
+  table-layout: fixed;
+  text-align: center;
+  vertical-align: middle;
+  color: #8e8e8e;
+  border-right: 1px solid #efefef;
+  background: #f7f7f7;
+}
+
+.bir_title {
+  min-width: 23px;
+}
+
+.bir_dd, .bir_mm, .bir_yy {
+  display: table-cell;
+  width: 114px;
+  padding: 11px 0 11px 16px;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+
+.tel_dd, .tel_mm, .tel_yy {
+  display: table-cell;
+  width: 115px;
+  padding: 11px 0 11px 16px;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+
+.bir_yy,
+.tel_yy {
+  padding-right: 4px;
+  padding-left: 14px;
+}
+
+.tel_yy {
+  width: 245px;
+  padding-left: 14px;
+}
+
+.bir_dd,
+.tel_dd {
+  padding-right: 3px;
+  padding-left: 15px;
+}
+
+
+.error_ch {
+  padding: 10px 0 0;
+  text-align: center;
+}
+
+.error_ch .error {
+  margin: 0;
+}
+
+.btn_join,
+.tel_join {
+  display: block;
+  margin: 33px 0 19px;
+}
+
+.nxm_login_contents form input,
+.nxm_login_contents form input::-webkit-input-placeholder,
+.nxm_join_contents .join_from input,
+.nxm_join_contents .join_from input::-webkit-input-placeholder {
+  font-weight: 300;
+  color: #8e8e8e;
+  font-size: 14px;
+}
+
+
+.btn_join input[type=summit],
+.tel_join input[type=summit] {
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  height: 61px;
+  background-color: #fc8a84;
+  border: 1px solid #fc8a84;
+  font-weight: 500;
+}
+

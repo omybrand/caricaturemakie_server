@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no;">
+    <meta name="description" content="make, character, caricature, company">
+    <meta name="author" content="O MY BRAND">
+	<title>O'MY BRAND</title>
+	<!-- icon -->
+	<link rel="apple-touch-icon" href="imgs/icon.png">
+	<link rel="shortcut icon" href="imgs/icon.png">
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!–[if lt IE 9]>
+    <script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
+    <![endif]–>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Comfortaa:400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</head>
+<body id="page-top" class="index">
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- 모바일용 네비게이션-->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                    <div id="logo">
+                        <span onclick="go_top();">
+                            <a href="/"><img class="logo-img" img-responsive src="imgs/logo.png"></a>
+                         </span>
+                    </div>
+                </div>
+                <!--/. 모바일용 네비게이션-->
+                <!-- navbar-collapse 네비게이션-->
+                <div class="navbar-collapse collapse " id="bs-example-navbar-collapse-1">
+                   <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/about">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                            	<ul class="dropdown-menu" role="menu">
+                                    <li role="menu">
+                                        <a href="#page-top">Caricature Ma-kie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="alert('준비중입니다');">Character Ma-kie</a>
+                                    </li>
+                                 </ul>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/recruit">Recruit</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="http://blog.naver.com/omybrand">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse 네비게이션 -->
+            </div>
+            <!-- /.container-fluid -->
+    	</div>
+        <!--/. navbar-inner-->
+    </nav>
+	<!-- 서비스 소개section -->
+    <section id="services">
+    	<!--caricaturemake_intro-->
+        <div class="caricaturemake_intro row">
+            <div class="container">
+            	<!--about_service-->
+                <div class="about_service row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                        <img src="imgs/services/phone.png" class="service_img img-responsive" alt="">
+                    </div>
+                    <!--article_group-->
+                    <div class="article_group">
+        	           	<div class="caricaturemake_intro_title_group col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                      		<h1 class="caricaturemake_intro_title">Caricature Ma-kie</h1>
+                       		<img src="imgs/services/service_intro_title_korea.png" class="img-responsive">
+                      	</div>
+                        <div class="col-lg-8 col-md-12 col-sm-12">
+            	            <p class="service_article text-muted korean">오마이브랜드의 대표 서비스중 하나인 캐리커쳐 마키는'맞춤형 캐리커쳐 제작서비스' 입니다.<br>
+                            											 <%=cnt %>개의 다양한 스타일 중 자신이 원하는 스타일을 선택하여<br>
+                                                                         자신과 꼭 닮은 캐리커쳐를 실물보다 더욱 아름답게 제작할 수 있습니다.<br>
+                                                                         당신의 추억을 보다 아름답게 간직하세요!<br>
+                            </p>
+                            <!--홈페이지 버튼 캐리커쳐마키 홈페이지 완성시 오픈<a href="#" onClick="alert('준비중입니다');"><button class="alert-link btn btn-xl" id="mint_btn"><i class="fa fa-home fa-lg fa-inverse homepage_icon"></i>Homepage</button></a>-->
+                        </div>
+                    </div>
+                    <!--/.article_group end-->
+                </div>
+                <!--/.about_service end-->
+            </div>
+            <!--/.container end-->
+        </div>
+        <!--/.caricaturemake_intro end-->
+        <!-- Header 동영상부분-->
+    <header class="header col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background:#ff8886">
+        <div class="video">
+    	<embed class="embed-responsive" src="https://www.youtube.com/embed/OsGxshIPy-g" frameborder="0" allowfullscreen="true"></embed>
+        </div>
+    </header>
+    <!-- /.Header 동영상부분-->
+        <!--캐리커쳐마키 장점-->
+        <div class="merit row ">
+        	<div class="container">
+            	<div class="service_introduce_heading col-lg-12 ">
+                    <img src="imgs/services/service_intro_title_big.png" class="img-responsive">
+                </div>
+            	<div class="merit_title">
+                	<h3 class="korean">[캐리커쳐마키 특징]</h3>
+                    <p class="korean">캐리커쳐 마키는 기존의 캐리커쳐 제작방식의 단점들을 보완한 다양한 장점들을 갖추고 있습니다.</p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6 ">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/art_style_new.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">다양한 스타일</h4>
+                    <p class="merit_article text-muted">
+                        사용자의 취향과 맞는 스타일을<br>
+                        선택하여 제작할 수 있습니다.
+                    </p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/present.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">캐리커쳐상품</h4>
+                    <p class="merit_article text-muted">
+                        캐리커쳐를 사용자가 원하는 상품에<br>
+                        접목하여 구매하실 수 있습니다.
+                    </p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/anywhere.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">언제 어디서나 주문</h4>
+                    <p class="merit_article text-muted">
+                        모바일, 태블릿 그리고 웹으로도<br>
+                        서비스를 이용하실 수 있습니다.
+                    </p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/mail.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">고객 의견 반영</h4>
+                    <p class="merit_article text-muted">
+                        사용자가 원하는 부분을<br>
+                        고려해서 제작합니다.
+                    </p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/memory.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">추억을 보다 아름답게</h4>
+                    <p class="merit_article text-muted">
+                        사용자의 추억을 작품으로<br>
+                        승화시켜더욱 아름답게 만듭니다.
+                    </p>
+                </div>
+                <div class="merit_group col-md-3 col-sm-6">
+                    <span class="merit_img thumbnail fa-4x">
+                        <img src="imgs/services/anyperson.png" class="img-responsive">
+                    </span>
+                    <h4 class="merit_subtitle korean">아티스트 도전</h4>
+                    <p class="merit_article text-muted">
+                        캐리커쳐 작가를 지망하는분이면<br>
+                        누구나 작가로 도전할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/.캐리커쳐마키 장점-->
+
+        <!--캐리커쳐마키 작가보기-->
+        <div class="artist_view">
+        	<div class="container">
+            	<h3 class="artist_view_title korean">[캐리커쳐 스타일]</h3>
+                <p class="artist_view_article korean">맞춤형 캐리커쳐 제작서비스 캐리커쳐 마키에는 <strong><%=cnt %>개</strong>의 다양한 캐리커쳐 스타일이 있습니다.<br>여러분들이 원하는 스타일을 선택해보세요!</p>
+                <!--작가 소개 패널-->
+                <div class="panel-body col-lg-12">
+                    <% datas.forEach(function (item, index) { %>
+                	<!--스타일소개 카드-->
+                   	<div class="artist col-lg-3 col-md-4 col-sm-6">
+                	   <a href="/style?sn=<%=item.style_sn %>"><img class="style_pic img-responsive" src="<%=item.style_cover %>"></a>
+                            <div class="artist_caption">
+                          	<ul>
+                     	       	  <li><h5 class="style_name korean"><a href="/style?sn=<%=item.style_sn %>"><%=item.style_adjective %><br>[<%=item.style_name %> 스타일]</a></h5></li>
+                                   <li><p class="artist_name korean">by<br><span class="name"><a href="/artist?sn=<%=item.artist_sn %>"><%=item.artist_name %></a></span></p></li>
+                                 </ul>
+                            </div>
+                        </div>
+                        <!--/.스타일소개 카드 end-->
+                    <% }); %>
+                </div>
+                <!--/.작가소개 패널 end-->
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.캐리커쳐마키 작가보기-->
+
+        <!--캐리커쳐마키 활용법-->
+        <div class="service_introduce">
+            <div class="row">
+            	<div class="introduce_img col-lg-8 col-md-12 col-sm-12">
+                	<img src="imgs/portfolio/roundicons_2_7.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="service_introduce_article_1 col-lg-4 col-md-12 col-sm-12">
+                	<h2 class="service_introduce_title korean">당신의 순간을<br> 아름답게 간직하세요!</h2>
+                    <p class="text-muted">당신의 아이, 당신의 연인, 당신의 가족</br>
+                                          당신의 소중한 순간들을 캐리커쳐를 통해<br>
+                                          더욱 아름답게 간직할 수 있습니다!<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="service_introduce">
+            <div class="row">
+                <div class="service_introduce_article_2 col-lg-4 col-md-12 col-sm-12">
+                	<h2 class="service_introduce_title korean">자신을 특별하게<br>표현해보세요!</h2>
+                    <p class="text-muted">자신을 표현할 특별한 방법을 찾고 계신가요?<br>
+                                          자신과 꼭 닮은 캐리커쳐로 자신을 P.R 해보세요.<br>
+                                          당신을 더욱 돋보이게 만들어줄 것입니다.<br>
+                    </p>
+                </div>
+                <div class="introduce_img col-lg-8 col-md-12 col-sm-12" >
+                	<img src="imgs/portfolio/roundicons_2_6.jpg" class="img-responsive" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="service_introduce">
+            <div class="row">
+                <div class="introduce_img col-lg-8 col-md-12 col-sm-12">
+                	<img src="imgs/portfolio/roundicons_2_10.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="service_introduce_article_3 col-lg-4 col-md-12 col-sm-12">
+                	<h2 class="service_introduce_title korean">최고의 선물입니다!</h2>
+                    <p class="text-muted">기념일 선물을 고민하고 계신가요?<br>
+                                          당신의 연인에게 캐리커쳐를 선물하세요.<br>
+                                          영원히 기억되는 최고의 선물이 될 것입니다!<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--/.캐리커쳐마키 활용법-->
+
+        <!--캐리커쳐마키 다운로드-->
+        <div class="download_caricature">
+            <div class="container text-center">
+                <h3 class="download_title">Caricature Ma-kie Download</h3>
+                <h4 class="download_subtitle">지금 다운로드하세요!</h4>
+                <!--플레이스토어 링크-->
+                <div class="col-lg-6">
+                    <a href="https://play.google.com/store/apps/details?id=com.omybrand"><img src="imgs/services/caricature_android.png" onMouseOver='this.src="imgs/services/caricature_android_hover.png"' onMouseOut='this.src="imgs/services/caricature_android.png"'></a>
+                    <h4>Android App</h4>
+                </div>
+                <!--/.플레이스토어 링크 end-->
+                <!--앱스토어 링크-->
+                <div class="col-lg-6">
+                    <a href="#" onClick="alert('준비중입니다');"><img src="imgs/services/caricature_android.png" onMouseOver='this.src="imgs/services/caricature_android_hover.png"' onMouseOut='this.src="imgs/services/caricature_android.png"'></a>
+                    <h4>IOS App</h4>
+                </div>
+                <!--/.앱스토어 링크 end-->
+                <!--캐릭터 마키 캐릭터 이미지-->
+                <div class="col-lg-12">
+                    <img src="imgs/services/character.png" class="img-responsive">
+                </div>
+                <!--/.캐릭터 마키 캐릭터 이미지 end-->
+            </div>
+        </div>
+        <!--/.캐리커쳐마키 다운로드-->
+    </section>
+    <!--footer-->
+    <footer>
+    	<!--footer_main-->
+        <div class="footer_main">
+            <div class="container" id="footer_main">
+                <!--contact_us-->
+                <div class="contact_us col-md-6">
+                    <h5 class="footer_title">CONTACT US</h5>
+                    <hr class="footer_hr">
+                    <div class="footer_icon">
+                        <i class="fa fa-home fa-2x fa-inverse korean">&nbsp;경기도 성남시 수정구 금토동 판교 창조경제밸리 기업지원허브 글러벌스마트창작터G748호</i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-phone fa-2x fa-inverse">&nbsp;&nbsp;<span class="footer_tel">07046805217</span></i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-envelope fa-2x fa-inverse">&nbsp;&nbsp;my@omybrand.com</i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-user fa-2x fa-inverse korean">&nbsp;&nbsp;대표자: 심성규</i>
+                    </div>
+                    <div class="footer_icon">
+                        통신판매업신고번호: 2018-성남수정-0024
+                    </div>
+                    <div class="footer_icon">
+                        벤처기업인증 : 제 20150101909 호
+                    </div>
+                </div>
+                <!--/.contact_us end-->
+                <!--stay_connected-->
+                <div class="stay_connected col-md-6">
+                    <h5 class="footer_title">STAY CONNECTED</h5>
+                    <hr class="footer_hr">
+                    <div class="footer_icon">
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4 visible-xs">
+                            <a href="tel:07046805217"><i class="social_phone fa fa-phone  fa-5x fa-inverse"></i></a><p class="korean_w">전화걸기</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4">
+                            <a href="https://ko-kr.facebook.com/OMyBrand"><i class="fa fa-facebook  fa-5x fa-inverse"></i></a><p class="korean_w visible-xs">페이스북</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4">
+                            <a href="http://blog.naver.com/omybrand"><img class="blog_icon" src="imgs/about/blog.png"></a><p class="korean_w visible-xs">블로그</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                            <a href="http://goto.kakao.com/ged7wt6k"><img class="kakao_icon" src="imgs/about/kakao.png"></a><p class="korean_w visible-xs">옐로ID</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.stay_connected-->
+            </div>
+        </div>
+        <!--/.footer_main end-->
+        <!--copyright-->
+        <div class="copyright">
+           	Copyright &copy; O'MY BRAND 2014
+        </div>
+        <!--/.copyright end-->
+    </footer>
+    <!--/.footer end-->
+
+	 <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!--<script src="js/classie.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   <script src="js/classie.js"></script>
+   <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+   <script src="js/jqBootstrapValidation.js"></script>
+   <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+	<span onclick="go_top();">
+		<div class="up hidden-xs">
+           	<button type="button" class="btn btn-group-vertical">
+            	<i class="fa fa-chevron-up fa-2x  fa-mint">Top</i>
+            </button>
+        </div>
+    </span>
+</body>
+</html>

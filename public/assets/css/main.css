@@ -1,0 +1,412 @@
+
+.bg_color1 {
+  background-color: #f5f6f7;
+}
+
+/******************** artist registration ********************/
+
+
+
+.nxm_artist_registration_contents {
+  max-width: 900px;
+  width: 100%;
+  padding: 100px 5px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+
+.artist_registration_header {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.artist_registration_header > div {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.steps-bar {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 100%;
+}
+
+ul.steps-indicator {
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  left: 0;
+  list-style: outside none none;
+  margin: 0;
+  right: 0;
+  width: 100%;
+  padding: 24px 0 10px;
+}
+
+ul.steps-indicator.steps-3:before {
+  left: 16.6667%;
+  right: 16.6667%;
+}
+
+ul.steps-indicator li {
+  padding: 20px 0 0;
+  margin: 0;
+  position: relative;
+  width: 33.3333%;
+  pointer-events: none;
+}
+
+ul.steps-indicator li:after {
+  background-color: #a6a6a6;
+  box-shadow: 0 0 0 6px #e7eaf1, 0 0 0 7px #fff;
+  height: 10px;
+  top: -12px;
+  width: 10px;
+  border-radius: 100%;
+  content: "";
+  left: calc(50% - 7px);
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  transition: all 0.25s ease 0s;
+  vertical-align: middle;
+}
+
+ul.steps-indicator li:not(:last-child):before {
+  background-color: #a6a6a6;
+  content: "";
+  height: 2px;
+  left: calc(50% + 7px);
+  position: absolute;
+  top: -7px;
+  width: calc(100% - 14px);
+}
+
+ul.steps-indicator li div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+ul.steps-indicator li div a {
+ color: #a6a6a6;
+ cursor: pointer;
+ font-family: arial;
+ font-size: 11px;
+ font-weight: normal;
+ line-height: 14px;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ transition: all 0.25s ease 0s;
+}
+
+ul.steps-indicator li.done:after,
+ul.steps-indicator li.current:after,
+ul.steps-indicator li.done:not(:last-child):before {
+  background-color: #ff8886;
+}
+ul.steps-indicator li.current div a {
+  color: #3e4350;
+}
+
+.artist_registration_portfolio .r_portfolio_text,
+.artist_registration_select_price > div,
+.artist_registration_info .r_info_title,
+.artist_registration_info form .r_choice_area .r_area_title,
+.artist_registration_info .r_homepage .r_homepage_title {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist_registration_portfolio .r_portfolio_filelist div {
+  text-align: right;
+}
+
+
+.artist_registration_portfolio form {
+  text-align: center;
+}
+
+.artist_registration_portfolio form span {
+  max-width: 500px;
+  width: 100%;
+  margin: 33px auto 19px;
+}
+
+.artist_registration_portfolio form input {
+  display: none;
+}
+
+.artist_registration_portfolio form label {
+  margin-bottom: 20px;
+}
+
+.artist_registration_portfolio form label img {
+  width: 30px;
+}
+
+.artist_registration_select_price {
+  padding-bottom: 50px;
+}
+
+.artist_registration_select_price form {
+  padding: 10px 0;
+}
+
+.artist_registration_select_price form input {
+  display: none;
+}
+
+.artist_registration_select_price form > div {
+  display: flex;
+}
+
+.artist_registration_select_price form div label {
+  min-width: 438px;
+  display: flex;
+  border: 2px solid #999;
+  position: relative;
+  background-color: #fff;
+  background-image: url(../img/checkbox.svg);
+  background-repeat: no-repeat;
+  background-position: 97% 6%;
+  background-size: 40px;
+}
+
+.margin_r5 {
+  margin-right: 10px;
+}
+
+.margin_tr5 {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.margin_t5 {
+  margin-top: 10px;
+}
+
+.artist_registration_select_price form div label div {
+  min-width: 130px;
+}
+
+.artist_registration_select_price form div label .sp_box {
+  padding: 10px;
+}
+
+.artist_registration_select_price form div label div div {
+  padding: 10px 0;
+}
+
+.artist_registration_select_price form div label .image_sample {
+  max-width: 200px;
+  padding: 0;
+}
+
+.artist_registration_select_price form div label .image_sample img {
+  width: 100%;
+  position: relative;
+}
+
+.artist_registration_select_price form div label .sp_title {
+  font-size: 18px;
+  padding: 10px 0 0;
+  font-weight: 500;
+}
+
+.artist_registration_select_price form div label .sp_style {
+  font-size: 14px;
+  color: #666;
+  padding: 10px 0;
+}
+
+.artist_registration_select_price form div label .sp_price {
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  color: #ff6b6a;
+}
+
+.artist_registration_select_price form div label .sp_price span {
+  font-size: 14px;
+  color: #666;
+}
+
+.artist_registration_select_price form div label .sp_text,
+.artist_registration_select_price form div label .sp_info {
+  font-size: 14px;
+  color: #000;
+}
+
+.artist_registration_select_price form div label .sp_text ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.artist_registration_select_price form div label .sp_text ul li {
+  padding: 5px 0;
+}
+
+.r_select_price_chk input:checked+label {
+  background-image: url(../img/checkbox_.svg);
+  background-repeat: no-repeat;
+  background-position: 97% 6%;
+  background-size: 40px;
+  border-color: #ff8886;
+}
+
+
+.artist_registration_info .r_history {
+  max-width: 858px;
+  height: 100px;
+  text-decoration: none;
+  outline: none;
+  border:1px solid #dadada;
+  resize: none;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #fff;
+}
+
+.artist_registration_info form textarea {
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+
+.artist_registration_info form .r_choice_area {
+  padding-top: 10px;
+}
+
+.artist_registration_info form .r_choice_area .r_area_list {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+
+.artist_registration_info form .r_area_list .r_area_list_container {
+  display: inline-block;
+}
+
+.artist_registration_info form .r_area_list .r_choice_box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artist_registration_info form .r_area_list input {
+  display:none;
+}
+
+.artist_registration_info form .r_area_list label {
+  padding: 10px 0;
+  margin: 0 28px;
+  width: 75px;
+}
+
+@media screen and (max-width: 419px) {
+  .artist_registration_info form .r_area_list label {
+    margin:0 12px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .artist_registration_info form .r_area_list label {
+    margin:0 11px;
+  }
+}
+
+.artist_registration_info form .r_area_list input + label span {
+  display:inline-block;
+  width:30px;
+  height:30px;
+  vertical-align:middle;
+  background:url(../img/checkbox.svg) left top no-repeat;
+  cursor:pointer;
+}
+
+.artist_registration_info form .r_area_list input:checked + label span {
+  background:url(../img/checkbox_.svg) no-repeat;
+}
+
+.artist_registration_submit {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.artist_registration_submit > span {
+  display: block;
+  text-align: center;
+  max-width: 280px;
+  width: 100%;
+  padding: 10px 0 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2c2c2c;
+  margin: 0 auto;
+}
+
+
+
+
+.r_basic {
+  text-align: left !important;
+  margin: 0 auto;
+  font-weight: 500;
+  padding: 15px 0 3px;
+}
+
+.r_basic span {
+  font-size: 12px;
+  color: #ff7e7c;
+  line-height: 20px;
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+
+  .artist_registration_select_price form > div {
+    flex-direction: column;
+  }
+
+  .margin_r5 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .margin_tr5 {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+
+  .artist_registration_select_price form div label {
+    min-width: 310px;
+  }
+
+
+}
+
+
+.dropzone.dz-clickable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

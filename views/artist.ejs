@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no;">
+    <meta name="description" content="make, character, caricature, company">
+    <meta name="author" content="O MY BRAND">
+	<title>O'MY BRAND</title>
+	<!-- icon -->
+	<link rel="apple-touch-icon" href="imgs/icon.png">
+	<link rel="shortcut icon" href="imgs/icon.png">
+	<!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+	<!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!–[if lt IE 9]>
+    <script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
+    <![endif]–>
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Comfortaa:400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+</head>
+<body id="page-top" class="index">
+	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- 모바일용 네비게이션-->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                    </button>
+                    <div id="logo">
+                        <span onclick="go_top();">
+                            <a href="/"><img class="logo-img" img-responsive src="imgs/logo.png"></a>
+                         </span>
+                    </div>
+                </div>
+                <!--/. 모바일용 네비게이션-->
+                <!-- navbar-collapse 네비게이션-->
+                <div class="navbar-collapse collapse " id="bs-example-navbar-collapse-1">
+                   <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/about">About</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services<span class="caret"></span></a>
+                            	<ul class="dropdown-menu" role="menu">
+                                    <li role="menu">
+                                        <a href="/services">Caricature Ma-kie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onClick="alert('준비중입니다');">Character Ma-kie</a>
+                                    </li>
+                                 </ul>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="/recruit">Recruit</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="http://blog.naver.com/omybrand">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse 네비게이션 -->
+            </div>
+            <!-- /.container-fluid -->
+    	</div>
+        <!--/. navbar-inner-->
+    </nav>
+    <!--/. Navigation end-->
+    <!-- Header -->
+    <header class="artist_header">
+        <div class="container about_artist">
+            <img class="artist_pic_big" src="<%=info.artist_photo %>">
+            <h5 class="artist_introduce korean"><%=info.artist_ment %></h5>
+            <br>
+            <h4 class="artist_profile">[artist profile]</h4>
+            <p class="artist_info korean">
+                <% for (var i in datas) { %>
+                    <% if (datas[i].artist_info_month == '현재') { %>
+                        <strong>[<%=datas[i].artist_info_year %>~현재]</strong><br>
+                    <% } else if (datas[i].artist_info_month.length == 4) { %>
+                        <strong>[<%=datas[i].artist_info_year %>~<%=datas[i].artist_info_month %>]</strong><br>
+                    <% } else if (datas[i].artist_info_month == '00') { %>
+                        <strong>[<%=datas[i].artist_info_year %>]</strong><br>
+                    <% } else { %>
+                        <strong>[<%=datas[i].artist_info_year %>.<%=datas[i].artist_info_month %>]</strong><br>
+                    <% } %>
+
+                    <%- datas[i].artist_info_content %><br>
+
+                    <% if (datas.length - 1 > i) { %>
+                        <br>
+                    <% } %>
+                <% } %>
+            </p>
+        </div>
+    </header>
+    <!--/.header end-->
+    <div class="container">
+    	<div class="row artist_style">
+        	<div class="artist_style_title_group">
+            	<h3 class="artist_style_title">Style</h3>
+                <h5 class="artist_style_subtitle korean"><%=info.artist_name %> 작가님의 캐리커쳐 스타일</h5>
+                <hr>
+            </div>
+            <div class="artist_style_contents">
+                <% for (var i in datas2) { %>
+                    <div class="art_style col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                	<a href="/style?sn=<%=datas2[i].style_sn %>"><img class="img-responsive" src="<%=datas2[i].style_cover%>"></a>
+                	<div class="art_style_caption">
+                        <ul>
+                            <li><h5 class="style_name korean"><%=datas2[i].style_name%> 스타일</h5></li>
+                            <!--
+                            <li><p class="style_description korean"><span>당신의 사진이 하나의 작품이 된다.</span></p></li>
+                            -->
+                        </ul>
+                    </div>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <!--
+        <div class="row artist_portfolio">
+        	<div class="artist_style_title_group">
+                <h3 class="artist_style_title">Portfolio</h3>
+                <h5 class="artist_style_subtitle korean">지율리 작가님 포트폴리오</h5>
+                <hr>
+            </div>
+            <div class="artist_style_contents">
+            	<div class="art_style col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                	<img class="img-responsive" src="imgs/artist/artist_1/1.jpg">
+                </div>
+                <div class="art_style col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img class="img-responsive" src="imgs/artist/artist_1/2.jpg">
+                </div>
+                <div class="art_style col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <img class="img-responsive" src="imgs/artist/artist_1/3.jpg">
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+   <!--footer-->
+    <footer>
+    	<!--footer_main-->
+        <div class="footer_main">
+            <div class="container" id="footer_main">
+                <div class="contact_us col-md-6">
+                    <h5 class="footer_title">CONTACT US</h5>
+                    <hr class="footer_hr">
+                    <div class="footer_icon">
+                        <i class="fa fa-home fa-2x fa-inverse korean">&nbsp;경기도 성남시 수정구 금토동 판교 창조경제밸리 기업지원허브 글러벌스마트창작터G748호</i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-phone fa-2x fa-inverse">&nbsp;&nbsp;<span class="footer_tel">07046805217</span></i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-envelope fa-2x fa-inverse">&nbsp;&nbsp;my@omybrand.com</i>
+                    </div>
+                    <div class="footer_icon">
+                        <i class="fa fa-user fa-2x fa-inverse korean">&nbsp;&nbsp;대표자: 심성규</i>
+                    </div>
+                    <div class="footer_icon">
+                        통신판매업신고번호: 2018-성남수정-0024
+                    </div>
+                    <div class="footer_icon">
+                        벤처기업인증 : 제 20150101909 호
+                    </div>
+                </div>
+                <div class="stay_connected col-md-6">
+                    <h5 class="footer_title">STAY CONNECTED</h5>
+                    <hr class="footer_hr">
+                    <div class="footer_icon">
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4 visible-xs">
+                            <a href="tel:07046805217"><i class="social_phone fa fa-phone  fa-5x fa-inverse"></i></a><p class="korean_w">전화걸기</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4">
+                            <a href="https://ko-kr.facebook.com/OMyBrand"><i class="fa fa-facebook  fa-5x fa-inverse"></i></a><p class="korean_w visible-xs">페이스북</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-4">
+                            <a href="http://blog.naver.com/omybrand"><img class="blog_icon" src="imgs/about/blog.png"></a><p class="korean_w visible-xs">블로그</p>
+                        </div>
+                        <div class="footer_social_icon col-lg-1 col-md-1 col-sm-1 col-xs-3">
+                            <a href="http://goto.kakao.com/ged7wt6k"><img class="kakao_icon" src="imgs/about/kakao.png"></a><p class="korean_w visible-xs">옐로ID</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.footer_main end-->
+        <!--copyright-->
+        <div class="copyright">
+           	Copyright &copy; O'MY BRAND 2014
+        </div>
+        <!--/.copyright end-->
+    </footer>
+    <!--/.footer end-->
+
+	<!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!--<script src="js/classie.js"></script>-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+   	<script src="js/classie.js"></script>
+   	<script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+   	<script src="js/jqBootstrapValidation.js"></script>
+   <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+	<span onclick="go_top();">
+		<div class="up hidden-xs">
+           	<button type="button" class="btn btn-group-vertical">
+            	<i class="fa fa-chevron-up fa-2x  fa-mint">Top</i>
+            </button>
+        </div>
+    </span>
+</body>
+</html>
